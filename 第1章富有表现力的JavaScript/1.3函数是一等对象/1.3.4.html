@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		/*An anonymous function used as a closure.*/
+		var baz;
+		(function(){
+			var foo = 10;
+			var bar = 2;
+			baz = function(){
+				return foo * bar;
+			};
+		})();
+		alert(baz());
+	</script>
+</body>
+</html>

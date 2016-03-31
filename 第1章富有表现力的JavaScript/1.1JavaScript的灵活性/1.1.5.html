@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		/*This version allows the calls to be chained.*/
+		Function.prototype.method = function(name, fn){
+			this.prototype[name] = fn;
+			return this;
+		};
+		/*Anim class, with methods created using a convenience method and chaining.*/
+		var Anim = function(){};
+		Anim.
+			mehtod("start", function(){}).
+			method("stop", function(){});
+	</script>
+</body>
+</html>
